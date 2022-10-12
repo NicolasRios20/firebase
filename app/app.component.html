@@ -1,0 +1,38 @@
+<main>
+  <div>
+    <div class="container">
+  
+      <h2>Formulario FireBase<small>Nicolas Rios</small></h2>
+      
+      <form [formGroup] = "formulario" (ngSubmit)="persona(formulario.value)">
+        
+        <div class="group">      
+          <input type="text" required formControlName="nombre">
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label>Name</label>
+        </div>
+          
+        <div class="group">      
+          <input type="text" required formControlName="correo">
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label>Email</label>
+        </div>
+
+        <div class="group">      
+          <input type="text" required formControlName="mensaje">
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label>Mensaje</label>
+        </div>
+
+        <button mat-raised-button color="accent" values="persona()">ENVIAR</button>
+        
+      </form>
+    </div>
+  </div>
+</main>
+ 
+
+
